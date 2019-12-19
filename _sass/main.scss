@@ -13,6 +13,8 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
+$img-size: 400px;
+
 * {
     font-family: $default-font;
 }
@@ -25,6 +27,7 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 .site-header {
     border-top: none;
     border-bottom: none;
+    padding-top: 10px;
 }
 
 .wrapper {
@@ -34,4 +37,37 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 .project {
     border-bottom: 1px solid $grey-color-light;
     width: 100%;
+    padding-top: 50px;
+}
+
+.project:first-child {
+    padding-top: 0;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image {
+    flex: 1 1 auto;
+    max-width: $img-size;
+    max-height: $img-size;
+}
+
+.excerpt {
+    padding: 10px 10px 10px 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.no-bottom-border {
+    border-bottom: none;
 }
