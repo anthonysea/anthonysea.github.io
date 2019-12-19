@@ -1,0 +1,16 @@
+// Width of content area - override minima theme default
+$content-width: 80%;
+
+.site-title {
+    font-family: 'DM Serif Text';
+    font-size: 40px;
+}
+
+.site-header {
+    border-top: none;
+    border-bottom: none;
+}
+
+.wrapper {
+    max-width: $content-width;
+}
