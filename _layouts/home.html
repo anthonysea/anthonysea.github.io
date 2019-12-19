@@ -9,6 +9,11 @@ layout: default
 
   {{ content }}
 
+  {%- for project in site.data.projects -%}
+    <h1>{{ project.title }}</h1>
+  {%- endfor -%}
+
+
   <!-- {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
