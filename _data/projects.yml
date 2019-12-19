@@ -1,3 +1,9 @@
 - title: Project 1
+  description: Example description
 
 - title: Project 2
+  description: Example description
+  images:
+    - img1
+    - img2
+    - img3

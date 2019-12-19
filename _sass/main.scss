@@ -1,9 +1,25 @@
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
 // Width of content area - override minima theme default
-$content-width: 80%;
+$content-width: 95%;
+$default-font: 'Courier New', Monospace;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+* {
+    font-family: $default-font;
+}
 
 .site-title {
     font-family: 'DM Serif Text';
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .site-header {
@@ -13,4 +29,9 @@ $content-width: 80%;
 
 .wrapper {
     max-width: $content-width;
+}
+
+.project {
+    border-bottom: 1px solid $grey-color-light;
+    width: 100%;
 }
