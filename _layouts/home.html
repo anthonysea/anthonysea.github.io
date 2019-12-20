@@ -25,6 +25,7 @@ layout: default
       </div>
       <div class="project-details">
         <div class="project-tech">
+          <h3>Technologies</h3>
           <ul>
             {%- for tech in project.technologies -%}
               <li>{{ tech }}</li>
@@ -33,9 +34,11 @@ layout: default
           
         </div>
         <div class="project-description">
+          <h3>Description</h3>
           {{ project.description }}
         </div>
         <div class="project-challenges">
+          <h3>Challenges</h3>
           {{ project.challenges }}
         </div>
         

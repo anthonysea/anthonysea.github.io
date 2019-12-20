@@ -74,10 +74,23 @@ img {
     justify-content: space-between;
 }
 
+.project-tech, .project-description, .project-challenges {
+    flex: 1 1 auto;
+}
+
+.project-tech {
+    max-width: 20%;
+}
+
+.project-description, .project-challenges {
+    max-width: 38%;
+}
+
+ul {
+    list-style-type: none;
+}
+
 .no-bottom-border {
     border-bottom: none;
 }
 
-.project-tech, .project-description, .project-challenges {
-    flex: 1 1 auto;
-}

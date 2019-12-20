@@ -1,6 +1,6 @@
 ---
 title: Project 2
-excerpt: Example description 2
+excerpt: Example excerpt 2
 images:
     - src: https://images-na.ssl-images-amazon.com/images/I/71sG1O12uPL.jpg
     - src: https://images-na.ssl-images-amazon.com/images/I/71sG1O12uPL.jpg
