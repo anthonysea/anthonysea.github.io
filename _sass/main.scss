@@ -69,9 +69,15 @@ img {
 }
 
 .project-details {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .no-bottom-border {
     border-bottom: none;
+}
+
+.project-tech, .project-description, .project-challenges {
+    flex: 1 1 auto;
 }

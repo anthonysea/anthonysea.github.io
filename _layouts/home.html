@@ -21,10 +21,24 @@ layout: default
       </div>
       <div class="excerpt">
         <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+        <p>{{ project.excerpt }}</p>
       </div>
       <div class="project-details">
-        {{ project.content | markdownify }}
+        <div class="project-tech">
+          <ul>
+            {%- for tech in project.technologies -%}
+              <li>{{ tech }}</li>
+            {%- endfor -%}
+          </ul>
+          
+        </div>
+        <div class="project-description">
+          {{ project.description }}
+        </div>
+        <div class="project-challenges">
+          {{ project.challenges }}
+        </div>
+        
       </div>
     </div>
   </section>
