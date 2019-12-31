@@ -9,9 +9,9 @@ images:
 technologies:
     - Flask
     - Connexion with Swagger
-    - Vue.js
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut imperdiet luctus est. Quisque faucibus, quam et ornare vehicula, ex ipsum ultrices diam, quis hendrerit ipsum velit ut nisl. Proin lacinia enim at nisi fermentum porttitor. Mauris sed nisi non nibh pharetra tincidunt non vitae odio. Phasellus non lacus quis tellus scelerisque rhoncus. Quisque sagittis ultrices consequat."
-challenges: "Cras eget molestie nulla. Curabitur vehicula consectetur ornare. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu feugiat dolor. Fusce rutrum finibus augue, vitae sagittis ante vulputate ultrices. Nullam ac mollis odio. Vestibulum in velit a massa suscipit rhoncus. Nam nec varius nibh."
+    - Vue.js and Axios.js
+description: "Web application built with Flask, Connexion and Swagger, and Vue.js. First, I developed the backend REST API using Connexion on top of Flask. Connexion utilizes Swagger which allowed me to quickly define the endpoints that were needed for the frontend of the application. From then I could easily write up the backend logic that pulls the data from the nba_api Python package. Vue.js on the frontend allowed me to utilize Vue components to create a separation of concerns between differing parts of the application which simplified development. Requests to the REST API were done using Axios.js"
+challenges: "My main challenges with this project lied in the frontend organization of the application. There were a few instances where I had to refactor and remove components to better handle the logical flow of data from user input to data visualization. Another challenge, which still remains, is that any changes done to the nba_api package may cause my application to fail, I have to keep up to date with the changes of the package and adapt accordingly."
 
 ---
 
