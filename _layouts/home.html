@@ -12,12 +12,21 @@ layout: default
   {%- for project in site.projects -%}
   <section class="project">
     <div class="wrapper">
-      <div class="images">
-        {%- for image in project.images -%}
-          <div class="image">
-            <img src="{{ image.src }}" alt="">
-          </div>
-        {%- endfor -%}
+      <div class="captures">
+        {%- if project.videos.size -%}
+          {%- for video in project.videos -%}
+            <div class="capture">
+              <video src="{{ video.src }}" alt="" autoplay="true" loop="true">
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
+        {%- if project.images.size -%}
+          {%- for image in project.images -%}
+            <div class="capture">
+              <img src="{{ image.src }}">
+            </div>
+          {%- endfor -%}
+        {%- endif -%}
       </div>
       <div class="excerpt">
         <h2>{{ project.title }}</h2>

@@ -13,14 +13,14 @@ $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 
-$img-size: 400px;
+$img-size: 450px;
 
 * {
     font-family: $default-font;
 }
 
 .site-title {
-    font-family: 'DM Serif Text';
+    font-family: 'Courier New';
     font-size: 35px;
 }
 
@@ -48,13 +48,13 @@ $img-size: 400px;
     border-bottom: none;
 }
 
-.images {
+.captures {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.image {
+.capture {
     flex: 1 1 auto;
     max-width: $img-size;
     max-height: $img-size;
@@ -64,7 +64,7 @@ $img-size: 400px;
     padding: 10px 10px 10px 0px;
 }
 
-img {
+img, video {
     max-width: 100%;
 }
 
