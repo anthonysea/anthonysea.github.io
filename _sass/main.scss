@@ -63,6 +63,15 @@ $img-size: 450px;
 
 .excerpt {
     padding: 10px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.excerpt > h2:hover {
+    text-decoration: underline;
+}
+
+.excerpt:hover {
+
 }
 
 img, video {
