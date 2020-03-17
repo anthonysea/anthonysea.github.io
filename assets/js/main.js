@@ -6,6 +6,10 @@ $(document).ready(function() {
               //  $(this).css('display', 'flex');
         });
     });
+    $(".about-me").hide();
+    $(".site-title").click(function() {
+        $(".about-me").slideToggle("slow", function() {});
+    })
 });
 
 
