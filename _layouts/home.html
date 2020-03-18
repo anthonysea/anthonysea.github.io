@@ -19,14 +19,14 @@ layout: default
         {%- if project.videos.size -%}
           {%- for video in project.videos -%}
             <div class="capture">
-              <video src="{{ video.src }}" alt="" autoplay="true" loop="true">
+              <video class="enlarge-screen" src="{{ video.src }}" alt="" autoplay="true" loop="true">
             </div>
           {%- endfor -%}
         {%- endif -%}
         {%- if project.images.size -%}
           {%- for image in project.images -%}
             <div class="capture">
-              <img src="{{ image.src }}">
+              <img class="enlarge-screen" src="{{ image.src }}">
             </div>
           {%- endfor -%}
         {%- endif -%}
