@@ -22,7 +22,6 @@ let overlay = {
     init() {
         console.log("overlay initialized.");
 
-        // $("body").append('<div class="overlay"><div class="modal-video"><div class="video-wrapper"></div></div></div>');
         $("body").append('<div class="overlay"><div class="video-wrapper"></div></div>');
 
         var self = this;
