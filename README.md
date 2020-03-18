@@ -3,4 +3,4 @@
 ### To-do
 - Media query styling
 - New tab/fullscreen when capture is clicked
-- About page + menu
+- ~~About page + menu~~
